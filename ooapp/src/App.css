@@ -1,0 +1,2209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     transition: 0.6s;
+
+}
+
+img {
+     object-fit: cover;
+}
+
+body {
+     background-color: #ffffff;
+}
+
+/* -----head----- */
+
+.head {
+     width: 100%;
+     height: 80px;
+     border-bottom: 1px solid #ffffff;
+}
+
+.head .container {
+     width: 80%;
+     height: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.head .container .logo h1 {
+     font-weight: 800;
+     font-size: 28px;
+     margin-bottom: 10px;
+     color: #ffffff;
+}
+
+.head .container .logo span {
+     font-weight: 500;
+     font-size: 18px;
+     color: #ffffff;
+     text-transform: uppercase;
+}
+
+.head .container .social {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+
+.social i svg {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     padding: 13px;
+     background-color: rgba(255, 255, 255, 0.2);
+     cursor: pointer;
+     color: #1fbdb0;
+}
+
+.social i svg:hover {
+     color: #ffffff;
+     background-color: #1cc0b2;
+}
+
+@media(max-width:550px) {
+     .social i svg {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          padding: 9px;
+          margin-bottom: 5px;
+     }
+}
+
+@media(max-width:500px) {
+     .head {
+          height: 130px;
+     }
+
+     .head .container {
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .head .container .logo {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding: 0 20px;
+          padding-top: 20px;
+          align-items: center;
+     }
+}
+
+/* -----/head----- */
+
+/* -----header----- */
+header {
+     width: 100%;
+     height: 100px;
+}
+
+header nav {
+     width: 90%;
+     margin: auto;
+     background-color: rgba(255, 255, 255, 0.2);
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-left: 20px;
+
+
+}
+
+header nav ul {
+     display: flex;
+     gap: 20px;
+     list-style: none;
+}
+
+header nav ul li a {
+     text-decoration: none;
+     color: #ffffff;
+     font-size: 19px;
+}
+
+header nav ul li a:hover {
+     color: #1fbdb0;
+}
+
+header nav .start {
+     background-color: #1fbdb0;
+     padding: 30px 70px;
+     color: white;
+     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.fabars {
+     display: none;
+}
+
+.fabars i svg {
+     background-color: transparent;
+     color: #ffffff;
+     padding: 9px;
+     cursor: pointer;
+     /* border-radius: 0; */
+     margin-right: 20px;
+     width: 50px;
+     height: 50px;
+}
+
+.bare {
+     display: none;
+}
+
+@media(max-width:900px) {
+     .linkes {
+          display: none;
+     }
+
+     .fabars {
+          display: flex;
+     }
+
+     header nav {
+          padding-left: 0;
+     }
+
+     header {
+          position: relative;
+     }
+
+     header nav .start {
+          padding: 30px 70px;
+          color: white;
+          clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%);
+     }
+
+     .bare {
+          display: block;
+          position: absolute;
+          left: 5%;
+          top: 80%;
+          background-color: #1cc0b2;
+          width: 90%;
+          margin: auto;
+          height: 300px;
+     }
+
+     .bare ul {
+          display: block;
+          padding: 0px 10px;
+     }
+
+     .bare ul li {
+          margin: 15px 0;
+     }
+
+     .bare ul li a:hover {
+          /* color: rgb(57, 46, 155); */
+          color: rgb(24, 120, 199)
+     }
+}
+
+@media(max-width:400px) {
+     header nav .start {
+          background-color: #1fbdb0;
+          padding: 30px 50px;
+          color: white;
+
+     }
+
+     .fabars i svg {
+          background-color: transparent;
+          color: #ffffff;
+          padding: 5px;
+          border-radius: 0;
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+     }
+
+}
+
+@media(max-width:500px) {
+     .bare {
+          /* top: 28%; */
+          /* top: 26%; */
+     }
+}
+
+/* -----/header----- */
+
+/* -----home----- */
+/* -----hero----- */
+.hero {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/heureuse-jeune-etudiante-tenant-cahiers-cours-souriant-camera-debout-au-printemps.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+
+}
+
+@media(max-width:700px) {
+     .hero {
+          background-position: right;
+     }
+
+}
+
+.hero .comtainer {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     padding-top: 200px;
+}
+
+.hero .comtainer .row {
+     width: 80%;
+     margin: auto;
+}
+
+.hero .comtainer .row {
+     width: 80%;
+     margin: auto;
+
+}
+
+.hero .comtainer button {
+     background-color: #ffffff;
+     padding: 10px 28px;
+     /* border-radius: 4px; */
+     color: #1cc0b2;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     margin: 10px 5px;
+
+}
+
+button {
+     cursor: pointer;
+}
+
+.hero .comtainer button i svg {
+     margin-left: 10px;
+     font-size: 30px;
+     vertical-align: middle;
+     background-color: none;
+     cursor: pointer;
+}
+
+.hero .comtainer button:hover {
+     box-shadow: -1px 5px 10px;
+}
+
+.hero .comtainer button:nth-child(2) {
+     background-color: #1cc0b2;
+     color: #ffffff;
+}
+
+.hero .comtainer .row p {
+     width: 600px;
+     line-height: 30px;
+     color: #ffffff;
+     margin: 20px 0;
+}
+
+.hero .comtainer .row h1 {
+     font-size: 35px;
+     text-transform: uppercase;
+     color: #ffffff;
+}
+
+.hero .comtainer .row h2 {
+     font-size: 25px;
+     text-transform: uppercase;
+     font-weight: 700;
+     color: #ffffff;
+     margin-bottom: 40px;
+}
+
+@media(max-width:700px) {
+     .hero .comtainer .row p {
+          width: 90%;
+          line-height: 30px;
+          color: #ffffff;
+          margin: 20px 0;
+
+     }
+}
+
+@media(max-width:500px) {
+     .hero .comtainer .row {
+          width: 100%;
+          /* padding-top: 100px; */
+          padding-left: 10px;
+          padding-right: 10px;
+     }
+
+     .hero .comtainer .row p {
+          width: 100%;
+          line-height: 30px;
+          color: #ffffff;
+          margin: 15px 0;
+          font-size: 16px;
+          line-height: 23px;
+     }
+
+     .hero .comtainer button {
+          margin: 5px 5px;
+
+     }
+
+     .hero .comtainer .row h2 {
+          margin-bottom: 25px;
+     }
+}
+
+@media(max-width:400px) {
+     .hero .comtainer .row {
+          padding-top: 40px;
+
+     }
+}
+
+/* -----/hero----- */
+
+/* -----Ahome----- */
+.ahome {
+     width: 100%;
+     height: 100%;
+     margin-bottom: 20px;
+     padding: 20px 0;
+     background-color: #ffffff;
+     text-align: center;
+
+}
+
+.ahome .ahometext {
+     margin-top: 10px;
+     margin-bottom: 40px;
+     padding: 0 10px;
+}
+
+.ahome .ahometext h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.ahome .ahometext h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+
+}
+
+.ahome .ahomecards {
+     display: flex;
+     align-items: center;
+     height: 100%;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 30px;
+     padding: 10px 10px;
+
+}
+
+.ahome .ahomecards .ahcard {
+     width: 350px;
+     height: 440px;
+     box-shadow: 2px 3px 8px #00000028;
+     border-radius: 15px;
+     padding: 20px;
+     text-align: center;
+}
+
+@media(max-width:400px) {
+     .ahome .ahomecards .ahcard {
+          width: 100%;
+          height: 100%;
+     }
+}
+
+.ahome .ahomecards .ahcard .teaic {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+
+}
+
+.ahome .ahomecards .ahcard .teaic i {
+     padding: 10px;
+     background-color: #1fbdb0;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+.ahome .ahomecards .ahcard .teaic i svg {
+     font-size: 45px;
+     color: #ffffff;
+}
+
+.ahome .ahomecards .ahcard .teaic h3 {
+     font-size: 30px;
+     color: #222;
+     text-transform: capitalize;
+}
+
+.ahome .ahomecards .ahcard .stars {
+     color: #1fbdb0;
+     margin: 20px 0;
+}
+
+.ahome .ahomecards .ahcard .teacher {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     justify-content: center;
+}
+
+.ahome .ahomecards .ahcard .image {
+     flex-shrink: 0;
+     cursor: pointer;
+}
+
+.ahome .ahomecards .ahcard img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     border: 3px solid #1fbdb0;
+     padding: 2px;
+     flex-shrink: 0;
+
+}
+
+.ahome .ahomecards .ahcard .teacher p {
+     color: #22222288;
+}
+
+.ahome .ahomecards .ahcard .time {
+     font-size: 17px;
+     color: #1fbdb0;
+     margin-top: 20px;
+}
+
+.ahome .ahomecards .ahcard .prise {
+     font-size: 17px;
+     padding: 5px 0;
+     margin: auto;
+     width: 90%;
+     color: #1fbdb0;
+     background-color: rgba(0, 0, 0, 0.035);
+     border-radius: 5px;
+     margin-top: 20px;
+
+}
+
+.ahome .ahomecards .ahcard .cardbuttom button {
+     border: 2px solid #1fbdb0;
+     outline: none;
+     width: 90%;
+     margin: auto;
+     color: #1fbdb0;
+     font-size: 16px;
+     padding: 10px 0;
+     text-transform: uppercase;
+     border-radius: 5px;
+     margin-top: 30px;
+     cursor: pointer;
+}
+
+.ahome .ahomecards .ahcard .cardbuttom button:hover {
+     color: #ffffff;
+     background-color: #1cc0b2;
+}
+
+/* -----/Ahome----- */
+
+/* -----Htast----- */
+.htast {
+     width: 100%;
+     height: 100%;
+     padding: 20px 0;
+     margin: 20px 0;
+}
+
+.htast .htastgrop {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     flex-wrap: wrap;
+}
+
+.htast .htastgrop .htastgrwin {
+     width: 420px;
+     height: 250px;
+     box-shadow: 2px 3px 8px #00000028;
+     padding: 20px;
+
+}
+
+.htast .htastgrop .htastgrwin .hgwintop {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+}
+
+.htast .htastgrop .htastgrwin .hgwintop .img {
+     position: relative;
+
+}
+
+.htast .htastgrop .htastgrwin .hgwintop img {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     flex-shrink: 0;
+}
+
+.htast .htastgrop .htastgrwin .hgwintop .hgwintoptext h3 {
+     text-transform: uppercase;
+     font-size: 25px;
+}
+
+.htast .htastgrop .htastgrwin .hgwintop .hgwintoptext h4 {
+     text-transform: uppercase;
+     font-size: 18px
+}
+
+.htast .htastgrop .htastgrwin .winposition {
+     position: absolute;
+     top: 55%;
+     left: 80%
+}
+
+.htast .htastgrop .htastgrwin .winposition i svg {
+     background-color: #1fbdb0;
+     color: #ffffff;
+     width: 33px;
+     height: 33px;
+     border-radius: 50%;
+     padding: 10px;
+     font-size: 10px;
+}
+
+.htast .htastgrop .htastgrwin .winbottom {
+     padding: 20px;
+     font-size: 16px;
+     line-height: 28px;
+}
+
+.htast .htasttext {
+     margin-top: 10px;
+     margin-bottom: 40px;
+     padding: 0 10px;
+     text-align: center;
+}
+
+.htast .htasttext h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.htast .htasttext h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+
+}
+
+@media(max-width:450px) {
+     .htast .htastgrop .htastgrwin {
+          width: 90%;
+          margin: auto;
+          height: 300px;
+          box-shadow: 2px 3px 8px #00000028;
+          padding: 10px;
+
+     }
+}
+
+@media(max-width:380px) {
+     .htast .htastgrop .htastgrwin {
+          width: 95%;
+          margin: auto;
+          height: 300px;
+          box-shadow: 2px 3px 8px #00000028;
+          padding: 20px;
+
+     }
+}
+
+/* -----/Htast----- */
+
+/* -----plhome----- */
+
+.plhome {
+     width: 100%;
+     height: 100%;
+     margin-bottom: 20px;
+     padding: 20px 0;
+     background-color: #ffffff;
+
+
+}
+
+.plhome .plhometext {
+     margin-top: 30px;
+     margin-bottom: 40px;
+     padding: 0 10px;
+     text-align: center;
+}
+
+.plhome .plhometext h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.plhome .plhometext h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+
+}
+
+/* -----/plhome----- */
+
+/* -----pricinghome----- */
+
+.pricinghome {
+     width: 100%;
+     height: 100%;
+     margin-bottom: 20px;
+     padding: 20px 0;
+     background-color: #ffffff;
+
+
+}
+
+.pricinghome .pricinghometext {
+     margin-top: 10px;
+     margin-bottom: 40px;
+     padding: 0 10px;
+     text-align: center;
+}
+
+.pricinghome .pricinghometext h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.pricinghome .pricinghometext h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+
+}
+
+/* -----/pricinghome----- */
+/* -----/home----- */
+
+/* -----about----- */
+/* -----abstart----- */
+.abstart {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/pexels-olly-3791961.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #ffffff;
+}
+
+.dd {
+     margin-top: 350px;
+}
+
+.abstart h3 {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.abstart h2 {
+     font-size: 100px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+@media(max-width:450px) {
+     .abstart h2 {
+          font-size: 85px;
+
+     }
+}
+
+@media(max-width:400px) {
+     .abstart h2 {
+          font-size: 75px;
+
+     }
+}
+
+/* -----/abstart----- */
+/* -----abcard----- */
+.abcard {
+     width: 100%;
+     /* height: 100vh; */
+     height: 100%;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+     margin-top: 90vh;
+     padding-top: 10px;
+     background-color: #ffffff;
+
+}
+
+.abcard .ffg {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin: auto;
+     gap: 40px;
+
+}
+
+.abcard .imgabout img {
+     width: 500px;
+}
+
+.abcard .textabout .tbtop h5 {
+     margin-bottom: 50px;
+     font-size: 18px;
+     color: #1cc0b2;
+}
+
+.abcard .textabout .tbtop h2 {
+     width: 500px;
+     font-size: 40px;
+     font-weight: 800;
+     text-transform: uppercase;
+}
+
+
+.abcard .textaboutcard .tbc {
+     width: 450px;
+     height: 200px;
+     box-shadow: 2px 3px 8px #0000003b;
+     background-color: #ffffff;
+     margin: 20px 0;
+     display: flex;
+     gap: 10px;
+     align-items: center;
+     padding: 10px;
+}
+
+.abcard .textaboutcard .tbc:hover {
+     background-color: #1fbdb0;
+     color: #ffffff;
+}
+
+.abcard .textaboutcard .tbc .iconca i svg {
+     font-size: 50px;
+     cursor: pointer;
+}
+
+.abcard .textaboutcard .cartext h3 {
+     margin-bottom: 25px;
+     font-size: 22px;
+     text-transform: capitalize;
+
+}
+
+.abcard .textaboutcard .cartext p {
+     width: 370px;
+     line-height: 25px;
+}
+
+@media(max-width:1080px) {
+     .abcard .imgabout img {
+          width: 380px;
+     }
+}
+
+@media(max-width:950px) {
+     .abcard .ffg {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          margin: auto;
+          gap: 50px;
+
+     }
+
+     .abcard .imgabout {
+          order: 2;
+     }
+
+     .abcard .textaboutcard {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          padding: 0 10px;
+          margin: 20px 0;
+     }
+
+     .abcard .textaboutcard .tbc {
+          width: 300px;
+          height: 250px;
+          margin: 0px 0;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          padding: 10px;
+     }
+
+     .abcard .textaboutcard .cartext p {
+          width: 100%;
+     }
+
+     .abcard .imgabout img {
+          width: 400px;
+     }
+
+     .abcard .textabout .tbtop h2,
+     h5 {
+          width: 80%;
+          margin-left: 20px;
+     }
+
+}
+
+@media(max-width:450px) {
+     .abcard .textabout .tbtop h2 {
+          width: 90%;
+          margin-left: 20px;
+          font-size: 30px;
+     }
+
+     .abcard .textabout .tbtop h5 {
+          width: 90%;
+          margin-bottom: 30px;
+
+     }
+
+     .abcard .imgabout img {
+          width: 300px;
+     }
+
+     .abcard .textaboutcard .tbc {
+          width: 95%;
+          height: 300px;
+     }
+}
+
+@media(max-width:420px) {
+     .abcard .imgabout img {
+          width: 260px;
+     }
+}
+
+/* -----/abcard----- */
+/* -----aboutcup----- */
+.aboutcup {
+     width: 100%;
+     height: 350px;
+     background-image: url(/public/image/countup.jpg);
+     background-position: center;
+     background-size: cover;
+     margin-bottom: 20px;
+     color: #ffffff;
+}
+
+.aboutcup .cupcover {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 60px;
+     height: 100%;
+     padding: 0 10px;
+     flex-wrap: wrap;
+}
+
+.aboutcup .cupcover .countup {
+     display: flex;
+     gap: 30px;
+     align-items: center;
+}
+
+.aboutcup .cupcover .countup i svg {
+     font-size: 50px;
+}
+
+.aboutcup .cupcover .countup:hover svg {
+     color: #1fbdb0;
+}
+
+.aboutcup .cupcover .nuate h2 {
+     font-size: 50px;
+     font-weight: 800;
+}
+
+.aboutcup .cupcover .nuate p {
+     font-size: 20px;
+     text-transform: uppercase;
+}
+
+@media(max-width:1000px) {
+     .aboutcup .cupcover {
+          gap: 35px;
+     }
+}
+
+@media(max-width:580px) {
+     .aboutcup {
+          height: 380px;
+     }
+}
+
+@media(max-width:500px) {
+     .aboutcup {
+          height: 420px;
+     }
+
+     .aboutcup .cupcover {
+          gap: 8px;
+     }
+}
+
+/* -----/aboutcup----- */
+/* -----/about----- */
+
+/* -----courses----- */
+/* -----coursestop----- */
+
+.courstop {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/courses.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #ffffff;
+}
+
+.courstoptext {
+     margin-top: 350px;
+}
+
+.courstoptext h3 {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.courstoptext h2 {
+     font-size: 85px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+@media(max-width:440px) {
+     .courstoptext h2 {
+          font-size: 70px;
+          text-transform: uppercase;
+          font-weight: 300;
+     }
+}
+
+
+@media(max-width:380px) {
+     .courstoptext h2 {
+          font-size: 55px;
+          text-transform: uppercase;
+          font-weight: 300;
+     }
+}
+
+/* -----/coursestop----- */
+/* -----coursesapend----- */
+
+.coursesapend {
+     width: 100%;
+     height: 100%;
+     margin-top: 90vh;
+     margin-bottom: 20px;
+     padding: 20px 0;
+
+}
+
+.coursesapend .apendcards {
+     display: flex;
+     align-items: center;
+     height: 100%;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 30px;
+     padding: 10px 250px;
+
+}
+
+@media(max-width:1625px) {
+     .coursesapend .apendcards {
+          padding: 10px 120px;
+     }
+}
+
+@media(max-width:1365px) {
+     .coursesapend .apendcards {
+          padding: 10px 10px;
+     }
+}
+
+.coursesapend .apendcards .apcard {
+     width: 350px;
+     height: 440px;
+     box-shadow: 2px 3px 8px #00000028;
+     border-radius: 15px;
+     padding: 20px;
+     text-align: center;
+     /* background-color: rgb(24, 120, 199); */
+}
+
+@media(max-width:400px) {
+     .coursesapend .apendcards .apcard {
+          width: 100%;
+          height: 100%;
+     }
+}
+
+.coursesapend .apendcards .apcard .teaic {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+
+}
+
+.coursesapend .apendcards .apcard .teaic i {
+     padding: 10px;
+     background-color: #1fbdb0;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+.coursesapend .apendcards .apcard .teaic i svg {
+     font-size: 45px;
+     color: #ffffff;
+}
+
+.coursesapend .apendcards .apcard .teaic h3 {
+     font-size: 30px;
+     color: #222;
+     text-transform: capitalize;
+}
+
+.coursesapend .apendcards .apcard .stars {
+     color: #1fbdb0;
+     margin: 20px 0;
+}
+
+.coursesapend .apendcards .apcard .teacher {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     justify-content: center;
+}
+
+.coursesapend .apendcards .image {
+     flex-shrink: 0;
+     cursor: pointer;
+}
+
+.coursesapend .apendcards img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     border: 3px solid #1fbdb0;
+     padding: 2px;
+     flex-shrink: 0;
+
+}
+
+.coursesapend .apendcards .apcard .teacher p {
+     color: #22222288;
+}
+
+.coursesapend .apendcards .apcard .time {
+     font-size: 17px;
+     color: #1fbdb0;
+     margin-top: 20px;
+}
+
+.coursesapend .apendcards .apcard .prise {
+     font-size: 17px;
+     padding: 5px 0;
+     margin: auto;
+     width: 90%;
+     color: #1fbdb0;
+     background-color: rgba(0, 0, 0, 0.035);
+     border-radius: 5px;
+     margin-top: 20px;
+
+}
+
+.coursesapend .apendcards .apcard .cardbuttom button {
+     border: 2px solid #1fbdb0;
+     outline: none;
+     width: 90%;
+     margin: auto;
+     color: #1fbdb0;
+     font-size: 16px;
+     padding: 10px 0;
+     text-transform: uppercase;
+     border-radius: 5px;
+     margin-top: 30px;
+     cursor: pointer;
+}
+
+.coursesapend .apendcards .apcard .cardbuttom button:hover {
+     color: #ffffff;
+     background-color: #1cc0b2;
+}
+
+/* -----/coursesapend----- */
+/* -----courscard----- */
+.courscard {
+     width: 180px;
+     height: 180px;
+     border-radius: 5px;
+     box-shadow: 2px 3px 8px #00000028;
+     text-align: center;
+     padding: 14px;
+     cursor: pointer;
+}
+
+.courscard i {
+     font-size: 50px;
+     color: #1fbdb0;
+}
+
+.courscard h4 {
+     font-size: 20px;
+     text-transform: capitalize;
+     margin: 15px 0;
+}
+
+.courscard p {
+     color: #1fbdb0;
+     background-color: rgba(0, 0, 0, 0.035);
+     padding: 5px;
+     width: 80%;
+     margin: auto;
+     font-size: 17px;
+     border-radius: 5px;
+
+}
+
+.courscard:hover {
+     background-color: #1fbdb0;
+}
+
+.courscard:hover i {
+     color: #ffffff;
+}
+
+.courscard:hover p {
+     background-color: #ffffff;
+}
+
+/* -----/courscard----- */
+/* -----coursesbottom----- */
+.coursesbottom {
+     width: 100%;
+     height: 100%;
+     padding: 20px 0;
+     margin-bottom: 20px;
+     text-align: center;
+}
+
+.coursesbottom .cartext {
+     margin-top: 10px;
+     margin-bottom: 40px;
+     padding: 0 10px;
+}
+
+.coursesbottom .cartext h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.coursesbottom .cartext h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+
+}
+
+.coursesbottom .cardes {
+     padding: 0 330px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+
+@media(max-width:1850px) {
+     .coursesbottom .cardes {
+          padding: 0 280px;
+     }
+}
+
+@media(max-width:1750px) {
+     .coursesbottom .cardes {
+          padding: 0 190px;
+     }
+}
+
+@media(max-width:1580px) {
+     .coursesbottom .cardes {
+          padding: 0 100px;
+     }
+}
+
+@media(max-width:1480px) {
+     .coursesbottom .cardes {
+          padding: 0 60px;
+     }
+}
+
+@media(max-width:1302px) {
+     .coursesbottom .cardes {
+          padding: 0 200px;
+     }
+}
+
+@media(max-width:1200px) {
+     .coursesbottom .cardes {
+          padding: 0 150px;
+     }
+}
+
+@media(max-width:1100px) {
+     .coursesbottom .cardes {
+          padding: 0 80px;
+     }
+}
+
+@media(max-width:990px) {
+     .coursesbottom .cardes {
+          padding: 0 10px;
+     }
+}
+
+/* -----/coursesbottom----- */
+
+/* -----team----- */
+/* -----teamtop----- */
+.teamtop {
+     width: 100%;
+     height: 100%;
+     background-image: url(/public/image/courses.jpg);
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     text-align: center;
+     color: #ffffff;
+}
+
+.tremtoptext {
+     margin-top: 350px;
+}
+
+.teamtop .tremtoptext p {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.teamtop .tremtoptext h2 {
+     font-size: 90px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+/* -----/teamtop----- */
+/* -----teamcard----- */
+.teamcard {
+     color: #222;
+     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+     width: 280px;
+     height: 530px;
+     position: relative;
+}
+
+.teamcard:hover {
+     background-color: #1fbdb0;
+}
+
+.teamcard:hover .teamicons {
+     opacity: 1;
+}
+
+.teamcard .teamimg {
+     width: 280px;
+
+}
+
+.teamcard .teamimg img {
+     width: 100%;
+
+}
+
+.teamcard .teamrowtext {
+     padding: 10px 50px;
+     text-align: center;
+
+}
+
+.teamcard .teamrowtext h4 {
+     font-size: 25px;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.teamcard .teamrowtext p {
+     color: #0000007e;
+}
+
+.teamcard .teamicons {
+     position: absolute;
+     left: 3%;
+     top: 36%;
+     opacity: 0;
+}
+
+.teamcard .teamicons i {
+     margin: 6px 0;
+     display: block;
+     cursor: pointer;
+}
+
+.teamcard .teamicons i svg {
+     color: #ffffff;
+     background-color: #222;
+     width: 46px;
+     height: 46px;
+     border-radius: 50%;
+     padding: 11px;
+     font-size: 10px;
+}
+
+.teamcard .teamicons i svg:hover {
+     background-color: #1cc0b2;
+}
+
+/* -----teamcard----- */
+
+/* -----teampeople----- */
+
+.teampeople {
+     width: 100%;
+     height: 100%;
+     margin-top: 90vh;
+     margin-bottom: 20px;
+     padding: 20px 0;
+}
+
+.teampeople .teamcardflex {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 30px;
+     flex-wrap: wrap;
+     padding: 10px 400px;
+}
+
+
+@media(max-width:1710px) {
+     .teampeople .teamcardflex {
+          padding: 10px 300px;
+     }
+}
+
+@media(max-width:1510px) {
+     .teampeople .teamcardflex {
+          padding: 10px 200px;
+     }
+}
+
+@media(max-width:1310px) {
+     .teampeople .teamcardflex {
+          padding: 10px 100px;
+     }
+}
+
+@media(max-width:1110px) {
+     .teampeople .teamcardflex {
+          padding: 10px 10px;
+     }
+}
+
+/* -----teampeople----- */
+/* -----/team----- */
+
+/* -----pricing----- */
+/* -----pricingtop----- */
+.pricingtop {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/courses.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #ffffff;
+}
+
+.pricingtop .pricingtexttop {
+     margin-top: 350px;
+}
+
+.pricingtop .pricingtexttop h3 {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.pricingtop .pricingtexttop h2 {
+     font-size: 100px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+@media(max-width:500px) {
+     .pricingtop .pricingtexttop h2 {
+          font-size: 80px;
+
+     }
+}
+
+@media(max-width:400px) {
+     .pricingtop .pricingtexttop h2 {
+          font-size: 65px;
+
+     }
+}
+
+/* -----pricingtop----- */
+
+.pricheight {
+     width: 100%;
+     height: 100%;
+     margin-top: 90vh;
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.pricheight h2 {
+     font-size: 40px;
+     text-transform: capitalize;
+}
+
+
+/* -----pricingapend----- */
+
+.pricingapend {
+     width: 100%;
+     height: 100%;
+     /* margin-top: 90vh; */
+     padding: 20px;
+     margin-bottom: 50px;
+     /* background-color: antiquewhite; */
+}
+
+.pricingapend .pricingapendcar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 40px;
+}
+
+.pricingapend .pricingapendcar .apendcard {
+     padding: 30px;
+     width: 300px;
+     height: 430px;
+     box-shadow: 2px 3px 8px #00000028;
+     background-color: #ffffff;
+     text-align: center;
+}
+
+.pricingapend .pricingapendcar .apendcard p:nth-child(1) {
+     text-transform: uppercase;
+     margin-bottom: 30px;
+     margin-top: 10px;
+     font-size: 20px;
+     font-weight: 800;
+
+}
+
+.pricingapend .pricingapendcar .apendcard span {
+     display: flex;
+     gap: 10px;
+     justify-content: center;
+}
+
+.pricingapend .pricingapendcar .apendcard span small {
+     margin-top: 25px;
+     font-size: 20px;
+}
+
+.pricingapend .pricingapendcar .apendcard span h3 {
+     font-size: 45px;
+     color: #1fbdb0;
+     font-weight: 700;
+}
+
+.pricingapend .pricingapendcar .apendcard .plorem {
+     margin: 30px;
+     line-height: 28px;
+
+}
+
+.pricingapend .pricingapendcar .apendcard .plorem p {
+     color: #000000a1;
+     font-size: 14px;
+     text-transform: lowercase;
+}
+
+.pricingapend .pricingapendcar .apendcard button {
+     width: 80%;
+     margin: auto;
+     border: 1px solid #1fbdb0;
+     color: #1fbdb0;
+     height: 40px;
+     border-radius: 5px;
+}
+
+.pricingapend .pricingapendcar .apendcard button:hover {
+     background-color: #1fbdb0;
+     color: #ffffff;
+}
+
+@media(max-width:1380px) {
+     .pricingapend .pricingapendcar {
+          gap: 40px;
+          padding: 20px 200px;
+     }
+}
+
+@media(max-width:1100px) {
+     .pricingapend .pricingapendcar {
+          gap: 40px;
+          padding: 20px 100px;
+     }
+}
+
+@media(max-width:900px) {
+     .pricingapend .pricingapendcar {
+          gap: 30px;
+          padding: 20px 0px;
+     }
+}
+
+@media(max-width:380px) {
+     .pricingapend .pricingapendcar .apendcard {
+          padding: 20px 20px;
+          width: 100%;
+          height: 100%;
+     }
+}
+
+/* -----/pricingapend----- */
+/* -----pricingend----- */
+.pricingend {
+     width: 100%;
+     height: 100%;
+     margin: 30px 0;
+     padding: 20px 0;
+     /* background-color: aqua; */
+}
+
+.pricingend .pricingendstart {
+     margin-top: 10px;
+     margin-bottom: 30px;
+     text-align: center;
+     padding: 10px;
+}
+
+.pricingend .pricingendstart h3 {
+     margin-bottom: 50px;
+     color: #1fbdb0;
+}
+
+.pricingend .pricingendstart h2 {
+     font-size: 40px;
+     text-transform: capitalize;
+}
+
+.pricingend .hawea {
+     width: 60%;
+     margin: auto;
+     height: 100%;
+}
+
+.pricingend .hawea .faqandanswer {
+     border-bottom: 1px solid #00000013;
+     margin: 20px 0;
+}
+
+.pricingend .hawea .faqandanswer .faqtop {
+     box-shadow: 2px 3px 8px #00000028;
+     padding: 12px 18px;
+     display: flex;
+     gap: 10px;
+     align-items: center;
+     justify-content: space-between;
+     cursor: pointer;
+}
+
+.pricingend .hawea .faqandanswer .faqtop h3 {
+     font-size: 21px;
+     text-transform: capitalize;
+     color: #1fbdb0;
+     font-weight: 500;
+}
+
+.pricingend .hawea .faqandanswer .faqtop i svg {
+     font-size: 30px;
+     color: #1fbdb0;
+}
+
+.pricingend .hawea .faqandanswer .answer {
+     box-shadow: 2px 3px 8px #00000011;
+     padding: 10px 2px;
+     transition: 0.9s;
+}
+
+.pricingend .hawea .faqandanswer .answer p {
+     font-size: 17px;
+     line-height: 27px;
+     word-spacing: 2px;
+}
+
+@media(max-width:1100px) {
+     .pricingend .hawea {
+          width: 70%;
+     }
+}
+
+@media(max-width:900px) {
+     .pricingend .hawea {
+          width: 80%;
+     }
+}
+
+@media(max-width:700px) {
+     .pricingend .hawea {
+          width: 90%;
+     }
+}
+
+@media(max-width:500px) {
+     .pricingend .hawea {
+          width: 95%;
+     }
+
+     .pricingend .hawea .faqandanswer .faqtop {
+          padding: 12px 8px;
+     }
+
+     .pricingend .hawea .faqandanswer .faqtop h3 {
+          font-size: 20px;
+     }
+
+     .pricingend .hawea .faqandanswer .answer p {
+          font-size: 16px;
+          line-height: 26px;
+          word-spacing: 1px;
+     }
+}
+
+/* -----/pricingend----- */
+/* -----/pricing----- */
+
+/* -----journal----- */
+/* -----journaltop----- */
+.journaltop {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/courses.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #ffffff;
+}
+
+.journaltop .journaltoptext {
+     margin-top: 350px;
+}
+
+.journaltop .journaltoptext h3 {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.journaltop .journaltoptext h2 {
+     font-size: 100px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+@media(max-width:500px) {
+     .journaltop .journaltoptext h2 {
+          font-size: 80px;
+     }
+}
+
+/* -----journaltop----- */
+.jourheight {
+     width: 100%;
+     height: 100%;
+     margin-top: 90vh;
+     text-align: center;
+     font-size: 50px;
+}
+
+.jourheight h2 {
+     font-size: 50px;
+     text-transform: capitalize;
+}
+
+/* -----journalapend----- */
+.journalapend {
+     width: 100%;
+     height: 100%;
+     margin-bottom: 20px;
+     padding: 20px 0;
+}
+
+.journalapend .apendplog {
+     height: 100%;
+     padding: 20px 150px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+     flex-wrap: wrap;
+
+}
+
+@media(max-width:1600px) {
+     .journalapend .apendplog {
+          height: 100%;
+          padding: 20px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          flex-wrap: wrap;
+
+     }
+}
+
+@media(max-width:450px) {
+     .journalapend .apendplog .plogcard {
+          width: 100%;
+          height: 100%;
+          box-shadow: 2px 3px 8px #00000028;
+          padding-bottom: 20px;
+
+     }
+}
+
+.journalapend .apendplog .plogcard {
+     width: 400px;
+     height: 500px;
+     box-shadow: 2px 3px 8px #00000028;
+
+}
+
+.journalapend .apendplog .plogcard .image {
+     width: 100%;
+}
+
+.journalapend .apendplog .plogcard .image img {
+     width: 100%;
+}
+
+.journalapend .apendplog .plogcard .plogicons {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 15px 20px;
+     align-items: center;
+     gap: 17px;
+}
+
+.journalapend .apendplog .plogcard .plogicons .iconatext {
+     display: flex;
+     align-items: center;
+     gap: 7px;
+}
+
+.journalapend .apendplog .plogcard .plogicons .iconatext i svg {
+     color: #1fbdb0;
+     font-size: 25px;
+}
+
+.journalapend .apendplog .plogcard .plogicons .iconatext p {
+     text-transform: uppercase;
+     font-size: 14px;
+}
+
+.journalapend .apendplog .plogcard .plogtitle {
+     padding: 5px 20px;
+}
+
+.journalapend .apendplog .plogcard .ploglorem {
+     padding: 10px 20px;
+}
+
+/* -----journalapend----- */
+/* -----/journal----- */
+
+/* -----contact----- */
+/* -----contacttop----- */
+.contacttop {
+     width: 100%;
+     height: 100vh;
+     background-image: url(/public/image/courses.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #ffffff;
+}
+
+.contacttop .contacttoptext {
+     margin-top: 350px;
+}
+
+.contacttop .contacttoptext h3 {
+     font-size: 18px;
+     margin-bottom: 50px;
+     text-align: center;
+}
+
+.contacttop .contacttoptext h2 {
+     font-size: 100px;
+     text-transform: uppercase;
+     font-weight: 300;
+     padding: 0 10px;
+}
+
+@media(max-width:500px) {
+     .contacttop .contacttoptext h2 {
+          font-size: 80px;
+     }
+}
+
+@media(max-width:450px) {
+     .contacttop .contacttoptext h2 {
+          font-size: 65px;
+     }
+}
+
+@media(max-width:400px) {
+     .contacttop .contacttoptext h2 {
+          font-size: 60px;
+     }
+}
+
+/* -----contacttop----- */
+
+/* -----contactend----- */
+.contactend {
+     margin-top: 90vh;
+     width: 100%;
+     height: 100%;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 3px;
+
+}
+
+.contactend .contactendright {
+     width: 600px;
+     height: 700px;
+     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.089);
+}
+
+.contactend .contactendright .contactendtext {
+     width: 500px;
+     margin: auto;
+}
+
+.contactend .contactendright .contactendtext .hh {
+     margin-top: 30px;
+}
+
+.contactend .contactendright .contactendtext .hh h2 {
+     text-transform: uppercase;
+     font-size: 40px;
+}
+
+.contactend .contactendright .contactendtext .hh p {
+     margin: 20px 0;
+}
+
+.contactend .contactendright .contactendtext .phoneaemail {
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+     gap: 30px;
+     margin: 20px 0;
+     line-height: 30px;
+}
+
+input,
+textarea {
+     outline: none;
+     border: 2px solid #00000067;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 16px;
+
+}
+
+textarea::placeholder {
+     color: #000000bb;
+     font-size: 16px;
+}
+
+.contactend .contactendright form input {
+     width: 100%;
+     height: 40px;
+     margin: 5px 0;
+
+}
+
+.contactend .contactendright form textarea {
+     width: 100%;
+}
+
+.contactend .contactendright form .toimpot {
+     display: flex;
+     align-items: center;
+}
+
+.contactend .iframe {
+     width: 600px;
+     height: 700px;
+     background-color: #47b8b8;
+
+}
+
+.contactend iframe {
+     width: 100%;
+     height: 100%;
+     border: none;
+}
+
+.contactend .contactendright form #submit {
+     width: 150px;
+     height: 45px;
+     padding: 0;
+     background-color: #1fbdb0;
+     color: #ffffff;
+     border: none;
+}
+
+.contactend .contactendright form h3 {
+     text-transform: capitalize;
+     margin-top: 15px;
+     font-size: 22px;
+     margin-left: 3px;
+}
+
+@media(max-width:1250px) {
+     .contactend .iframe {
+          width: 500px;
+          height: 720px;
+     }
+
+     .contactend .contactendright {
+          width: 520px;
+          height: 720px;
+     }
+
+     .contactend .contactendright .contactendtext {
+          width: 420px;
+          margin: auto;
+     }
+}
+
+@media(max-width:1080px) {
+     .contactend .iframe {
+          width: 430px;
+          height: 750px;
+     }
+
+     .contactend .contactendright {
+          width: 450px;
+          height: 750px;
+     }
+
+     .contactend .contactendright .contactendtext {
+          width: 400px;
+          margin: auto;
+     }
+}
+
+@media(max-width:930px) {
+     .contactend {
+          margin-top: 90vh;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+
+     }
+
+     .contactend .iframe {
+          width: 80%;
+          height: 350px;
+     }
+
+     .contactend .contactendright {
+          width: 80%;
+          height: 100%;
+          padding-bottom: 15px;
+     }
+
+     .contactend .contactendright .contactendtext {
+          width: 90%;
+          position: relative;
+          margin: auto;
+
+     }
+
+     .hr {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+
+}
+
+@media(max-width:700px) {
+     .contactend .contactendright .contactendtext .phoneaemail {
+          flex-wrap: wrap;
+          padding: 0 50px;
+     }
+}
+
+@media(max-width:600px) {
+
+     .contactend .iframe {
+          width: 95%;
+          height: 350px;
+     }
+
+     .contactend .contactendright {
+          width: 95%;
+          height: 100%;
+          padding-bottom: 15px;
+     }
+}
+
+@media(max-width:500px) {
+     .contactend .contactendright .contactendtext .phoneaemail {
+          flex-wrap: wrap;
+          padding: 0 10px;
+     }
+
+     .contactend .contactendright form .toimpot {
+          flex-direction: column;
+     }
+}
+
+@media(max-width:400px) {
+     .contactend .contactendright .contactendtext .phoneaemail {
+          flex-direction: column;
+     }
+
+     .contactend .contactendright .contactendtext {
+          width: 95%;
+     }
+
+     .contactend .contactendright form h3 {
+          text-transform: capitalize;
+          margin-top: 15px;
+          font-size: 20px;
+          gap: 5px;
+     }
+}
+
+/* -----/contactend----- */
+/* -----/contact----- */

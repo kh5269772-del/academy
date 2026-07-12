@@ -1,0 +1,367 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.footer .ghgh {
+    background-color: #1fbdb0;
+    width: 100%;
+    height: 300px;
+}
+
+.footer .footertop {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 10px;
+
+}
+
+.footer .footertop form {
+    position: relative;
+}
+
+.footer .footertop form input {
+    border: none;
+    width: 400px;
+    height: 50px;
+
+}
+
+.footer .footertop form .gg {
+    width: 110px;
+    height: 45px;
+    margin-left: 30px;
+    /* padding: 10px 20px; */
+    padding: 0;
+    padding-right: 40px;
+    background-color: #fff;
+
+}
+
+.footer .footertop form i {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.footer .footertop form i svg {
+    font-size: 20px;
+    color: #1fbdb0;
+}
+
+.footer .footertop .footertopleft {
+    width: 600px;
+}
+
+.footer .footertop .footertopleft h3 {
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #ffffffe8;
+}
+
+.footer .footertop .footertopleft p {
+    margin-top: 20px;
+    color: #ffffffe8;
+}
+
+@media(max-width:1460px) {
+    .footer .footertop {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media(max-width:1320px) {
+    .footer .footertop .footertopleft {
+        width: 50%;
+    }
+
+    .footer .footertop form {
+        width: 550px;
+    }
+}
+
+@media(max-width:1000px) {
+    .footer .footertop {
+        width: 95%;
+        height: 100%;
+
+    }
+}
+
+@media(max-width:870px) {
+    .footer .ghgh {
+        background-color: #1fbdb0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer .footertop {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 0 10px;
+        gap: 30px;
+
+    }
+
+    .footer .footertop .footertopleft {
+        width: 100%;
+    }
+
+    .footer .footertop form {
+        width: 100%;
+    }
+
+    .footer .footertop form input {
+        width: 300px;
+        height: 45px;
+
+    }
+
+    .footer .footertop form .gg {
+        width: 90px;
+        height: 45px;
+        margin-left: 15px;
+        padding: 0;
+        padding-right: 40px;
+
+    }
+
+    .footer .footertop form i {
+        right: 4%;
+        top: 30%;
+    }
+}
+
+@media(max-width:470px) {
+    .footer .ghgh {
+        width: 100%;
+        height: 400px;
+    }
+
+    .footer .footertop form {
+        width: 300px;
+    }
+
+    .footer .footertop form .gg {
+        width: 90px;
+        height: 45px;
+        margin-left: 30px;
+        margin-top: 30px;
+        /* padding: 10px 20px; */
+        padding: 0;
+        padding-right: 40px;
+        background-color: #fff;
+
+    }
+
+    .footer .footertop form input {
+        width: 300px;
+    }
+
+    .footer .footertop form i {
+        right: 65%;
+        top: 70%;
+    }
+}
+
+@media(max-width:370px) {
+    .footer .footertop form input {
+        width: 270px;
+        margin: auto;
+    }
+}
+
+.footerend {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+
+}
+
+.footerend .fotendgrop {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.footerend .fotendgrop h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.footerend .fotendgrop .footerwon h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footerend .fotendgrop .footerwon p {
+    color: #1fbdb0;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+
+.footerend .fotendgrop .footerwon #p {
+    color: #000000c2;
+    font-size: 16px;
+    text-transform: lowercase;
+    margin: 20px 0;
+    width: 300px;
+}
+
+.footerend .fotendgrop .footerwon i svg {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background: #1fbdb0;
+    margin: 0 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footerend .fotendgrop .footerto ul li {
+
+    margin: 5px 0;
+}
+
+.footerend .fotendgrop .footerto ul li a {
+    font-size: 20px;
+    color: #000000b6;
+}
+
+.footerend .fotendgrop .footerto ul li a:hover {
+    color: #1fbdb0;
+}
+
+.footerend .fotendgrop .footerto ul li a::before {
+    content: '→';
+    color: #1fbdb0;
+    margin-right: 5px;
+}
+
+.footerend .fotendgrop .footerthre .imgtotext .itemto {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.footerend .fotendgrop .footerthre img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.footerend .fotendgrop .footerthre .imgtotext .itemto h5 {
+    font-size: 16px;
+    color: #1fbdb0;
+    margin: 5px 0;
+}
+
+.footerend .fotendgrop .footerthre .imgtotext .itemto p {
+    color: #000000c2;
+}
+
+.footerend .fotendgrop .footerfor .rr {
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.footerend .fotendgrop .footerfor .rr i svg {
+    font-size: 25px;
+    color: #1fbdb0;
+}
+
+.footerend .fotendgrop .footerfor .rr p {
+    font-size: 16px;
+    color: #000000c2;
+}
+
+@media(max-width:1150px) {
+    .footerend .fotendgrop {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:850px) {
+    .footerend .fotendgrop {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+}
+
+@media(max-width:530px) {
+
+    .footerend .fotendgrop {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .footerend .fotendgrop .footerto ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+
+}
+
+@media(max-width:438px) {
+    .footerend .fotendgrop .footerwon #p {
+        color: #000000c2;
+        font-size: 16px;
+        text-transform: lowercase;
+        margin: 20px 0;
+        width: 90%;
+    }
+}
+
+.footerfot {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(000, 000, 000, 0.1);
+}
