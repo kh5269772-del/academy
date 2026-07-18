@@ -96,7 +96,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerfot">
-          <small>&copy;<a href="#">  Khaled Hegazi</a> all righgts reserved</small>
+          <small>&copy;<a href="http://wa.me/2012783041">  Khaled Hegazi</a> all righgts reserved</small>
       </div>
 
     </section>

@@ -5,7 +5,7 @@ function Contactend() {
     return (
         <section className="contactend">
           <div className="iframe">
-              <iframe src={maps}  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src={maps}  title="Google Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
            <div className="contactendright">
             <div className="contactendtext">
