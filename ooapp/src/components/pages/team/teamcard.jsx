@@ -8,7 +8,7 @@ function Teamcard(props) {
     return (
         <section className="teamcard">
             <div className="teamimg">
-                <img src={props.img} alt="" />
+                <img src={props.img} alt="props" />
             </div>
             <div className="teamrowtext">
                 <h4>{props.name}</h4>

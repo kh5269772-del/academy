@@ -4,7 +4,6 @@ import { FaPaperPlane } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import { FaUserAstronaut } from "react-icons/fa6";
 import { HiOutlineCalendarDateRange } from "react-icons/hi2";
 import { IoMapSharp } from "react-icons/io5";
@@ -61,7 +60,7 @@ function Footer() {
             <div className="imgtotext">
               {data.map((item, index) => (
                 <div className="itemto" key={index}>
-                  <img src={item.img} alt="" />
+                  <img src={item.img} alt="item" />
                   <div className="string">
                     {[
                       { icon: <FaUserAstronaut />, hh: 'admen', icon2: <HiOutlineCalendarDateRange />, tt: 'Oct.15,2024' }

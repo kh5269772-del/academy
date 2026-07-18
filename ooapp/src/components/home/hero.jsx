@@ -10,8 +10,8 @@ function Hero(){
                 <p>Lorem, ipsum dolor sit amet adipisicing elit. Nostrum pariatur dignissimos, nesciunt porro dolores impedit delectus deserunt inventore accusamus harum error quos, maiores placeat ea, laborum tenetur iste saepe sapiente ratione eaque voluptatum. Est sunt aliquam quo sapiente a excepturi?</p>
 
                 <div className="button">
-                    <button>fdfffffffff <i><MdOutlineArrowRightAlt /></i></button>
-                    <button> zassssssss<i><MdOutlineArrowRightAlt /></i></button>
+                    <button>register <i><MdOutlineArrowRightAlt /></i></button>
+                    <button> show<i><MdOutlineArrowRightAlt /></i></button>
                 </div>
             </div>
         </div>

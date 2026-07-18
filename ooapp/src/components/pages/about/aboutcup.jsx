@@ -4,8 +4,7 @@ import { FaUserTie } from "react-icons/fa6";
 import { FaAtlas } from "react-icons/fa";
 import { GiLaptop } from "react-icons/gi";
 import CountUp from "react-countup";
-import { useState } from "react";
-import {ScrollTirgger} from 'react-scroll-trigger'
+
 
 function Aboutcup() {
     // let [scrolly,setscrolly]=useState(false)

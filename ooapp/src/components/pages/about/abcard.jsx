@@ -2,7 +2,7 @@ import React from "react";
 import { GrCertificate } from "react-icons/gr";
 import { GrBook } from "react-icons/gr";
 import { FaUserGraduate } from "react-icons/fa6";
-import { RiGraduationCapFill } from "react-icons/ri";
+
 function Abcard() {
     let data = [
         { title: 'online couses', icon: <GrBook /> },

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { CgChevronDown } from "react-icons/cg";
-import { CgChevronUp } from "react-icons/cg";
 import { CgChevronRight } from "react-icons/cg";
 
 function Pricingend() {

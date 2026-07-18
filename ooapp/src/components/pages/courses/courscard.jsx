@@ -1,5 +1,4 @@
 import React from "react";
-import { LuImagePlus } from "react-icons/lu";
 function Courscard(props){
     return(
         <section className="courscard">

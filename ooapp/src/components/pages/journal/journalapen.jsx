@@ -18,7 +18,7 @@ function Journalapen() {
                 {data.map((item, index) => (
                     <div className="plogcard" key={index}>
                         <div className="image">
-                            <img src={item.img} alt="" />
+                            <img src={item.img} alt="item" />
                         </div>
                         <div className="plogicons">
                             {[

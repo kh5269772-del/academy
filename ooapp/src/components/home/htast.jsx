@@ -17,7 +17,7 @@ function Htast() {
                     <div className="htastgrwin" key={index}>
                         <div className="hgwintop">
                           <div className="img">
-                              <img src={item.img} alt="" />
+                              <img src={item.img} alt="item" />
                                  <div className="winposition">
                             <i>{item.icon}</i>
                         </div>

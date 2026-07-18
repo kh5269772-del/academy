@@ -34,7 +34,7 @@ function Coursesapend() {
                         </div>
                         <div className="teacher">
                             <div className="image">
-                                <img src={item.img} alt="" />
+                                <img src={item.img} alt="item" />
                             </div>
                            <p>{item.name}</p>
                         </div>
